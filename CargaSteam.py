@@ -3,15 +3,14 @@ import streamlit as st
 import base64
 import io
 from PIL import Image
-import streamlit as st
 
 # Cargar imagen para el logo
-logo_path = "C:/Users/Usuario/Desktop/Cargas de trabajo/Ultima version/logo.png"
+logo_path = "logo.png"  # Ruta relativa
 logo_image = Image.open(logo_path)
 st.image(logo_image, width=200)
 
 # Cargar imagen para el fondo
-fondo_path = "C:/Users/Usuario/Downloads/pexels-karolina-grabowska-8092510.jpg"
+fondo_path = "pexels-karolina-grabowska-8092510.jpg"  # Nombre correcto
 fondo_image = Image.open(fondo_path)
 
 # Convertir la imagen a base64
